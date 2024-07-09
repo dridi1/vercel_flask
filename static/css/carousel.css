@@ -1,0 +1,102 @@
+.carousel-item {
+    position: relative;
+    width: 100%;
+    height: 850px; /* Adjust this height as needed */
+}
+
+.carousel-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #464646;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+    background: var(--background);
+}
+
+.carousel-caption h5 {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.carousel-caption p {
+    font-size: 1.2em;
+}
+
+.scrolling-wrapper {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 300px; /* Height of the scrolling images container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.scrolling-images {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform 1s ease-in-out;
+}
+
+.scrolling-images img {
+    width: 100%;
+    height: auto; /* Height of each image */
+    object-fit: cover;
+}
+
+:root {
+    --steps: 5; /* Adjusted to match the character count of "Hello" */
+    --background: #1d1f20;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 18%;
+    left: 20%;
+    color: #ffcc5c ;
+    text-align: center;
+    background: rgba(0, 0, 0, 0); /* Optional: Adds a semi-transparent background */
+    padding: 0.5px;
+    border-radius: 5px;
+}
+
+.typing {
+    font-family: Serif;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typewriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+        typing 3.5s steps(40, end),
+        blink-caret-end 0.75s step-end 1.75s forwards;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret-end {
+    0%, 100%   { border-color: transparent }
+    50% { border-color: orange; }
+}

@@ -1,0 +1,52 @@
+.navbar-nav {
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.nav-item {
+    padding: 0 15px; /* Adjust the padding as needed */
+}
+
+.ms-auto {
+    margin-left: auto;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand img {
+    margin-right: 10px;
+}
+
+/* Navbar transition background */
+.navbar-scroll {
+    background: linear-gradient(135deg, #149e2b 0%, #80ff80 100%) !important;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.navbar {
+    transition: background-color 0.5s ease-in-out;
+}
+
+/* Dropdown styles */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: rgb(245, 200, 0);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: transparent;
+}
+
+.dropdown>.dropdown-toggle:active {
+    pointer-events: none;
+}

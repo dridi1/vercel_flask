@@ -1,0 +1,50 @@
+.footer {
+    background: linear-gradient(135deg, #149e2b 0%, #80ff80 100%);
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Styles */
+
+.footer h2, .footer h5 {
+    color: #fff;
+}
+
+.footer p, .footer ul, .footer li {
+    color: #ccc;
+}
+
+.footer .footer-links a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+.footer .footer-links a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.footer hr {
+    border-color: #444;
+}
+
+.footer .list-inline-item a {
+    color: #ccc;
+    font-size: 1.5rem;
+}
+
+.footer .list-inline-item a:hover {
+    color: #fff;
+}
+
+.text-end {
+    text-align: end;
+}
+
+@media (max-width: 767px) {
+    .text-end {
+        text-align: start;
+    }
+}

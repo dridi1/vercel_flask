@@ -1,0 +1,73 @@
+.A {
+  padding: 50px 20px 80px 20px;
+  padding-left: 0px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-sm-4, .col-sm-8 {
+  padding: 1px;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.content {
+  width: 100%;
+  height: auto;
+  padding-left: 0px; /* Adjust padding-left to bring the content closer to the left */
+}
+
+.title, .subtitle, .highlight, .comma, .text {
+  color: black;
+  font-size: 24px;
+  word-wrap: break-word;
+}
+
+.title {
+  font-family: 'Inknut Antiqua', serif;
+  font-weight: 400;
+}
+
+.subtitle {
+  font-family: 'Inder', sans-serif;
+  font-weight: 400;
+}
+
+.highlight {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+}
+
+.comma, .text {
+  font-family: 'Inika', serif;
+  font-weight: 400;
+}
+
+@media (max-width: 768px) {
+  .col-sm-4, .col-sm-8 {
+      flex: 0 0 100%;
+      max-width: 100%;
+  }
+
+  .A {
+      padding: 20px;
+  }
+
+  .content {
+      font-size: 20px;
+      padding-left: 0px; /* Adjust padding-left for smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .content {
+      font-size: 18px;
+      padding-left: 10px; /* Adjust padding-left for smaller screens */
+  }
+}

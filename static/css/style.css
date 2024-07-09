@@ -1,0 +1,109 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Positioning for background images */
+.left-bg, .right-bg {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 15%; /* Adjust as needed */
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1; /* Behind the main content */
+}
+
+.left-bg {
+    left: 0;
+    background-image: url('https://i.postimg.cc/Mp7gNCT8/wheats.png'); /* Replace with your image URL */
+}
+
+.right-bg {
+    right: 0;
+    background-image: url('https://i.postimg.cc/Mp7gNCT8/wheats.png'); /* Replace with your image URL */
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .left-bg, .right-bg {
+        display: none; /* Hide background images on smaller screens */
+    }
+}
+/* styles.css */
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Carousel Styles */
+.carousel-item img {
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+}
+
+.carousel-caption h1 {
+    font-size: 2.5rem;
+}
+
+/* Section Styles */
+.section {
+    padding: 2em 0;
+}
+
+.container-xxl {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1em;
+}
+
+.content {
+    margin-bottom: 2em;
+}
+
+.float-img {
+    display: block;
+    margin: 0 auto;
+}
+
+.title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+.highlight {
+    font-weight: bold;
+    color: #333;
+}
+
+.text, .subtitle, .comma {
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+/* Responsive Styles */
+@media (min-width: 768px) {
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .col-sm-3, .col-sm-5, .col-sm-7, .col-sm-9 {
+        flex: 1;
+    }
+}
